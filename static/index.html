@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuStarley Server</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>BuStarley Server</h1>
+        
+        <div class="status-cards">
+            <!-- CSS Check -->
+            <div class="card" id="css-check">
+                <h3>CSS</h3>
+                <div class="status" id="css-status">Checking...</div>
+            </div>
+            
+            <!-- JS Check -->
+            <div class="card" id="js-check">
+                <h3>JavaScript</h3>
+                <div class="status" id="js-status">Checking...</div>
+            </div>
+            
+            <!-- .env Check -->
+            <div class="card" id="env-check">
+                <h3>.env File</h3>
+                <div class="status" id="env-status">Checking...</div>
+            </div>
+        </div>
+        
+        <div class="env-details">
+            <h3>.env Data:</h3>
+            <pre id="env-data">Loading...</pre>
+        </div>
+        
+        <button class="test-btn" onclick="testConnection()">🔄 Test Connection</button>
+        
+        <footer>
+            <p>BuStarley Server | <span id="time"></span></p>
+        </footer>
+    </div>
+    
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
